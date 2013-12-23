@@ -15,6 +15,7 @@
 
 fuzzy-run is an application launcher to be used without the mouse (vim-bindings, but may be changed). In most usage, typing 4 characters and Enter should launch the right application. 
 The program searches in a "fuzzy" way in a list of previously run commands, or alternatively one can circle through the history of commands.
+Each command run is automatically added to the command list.
 
 This program is a light alternative to ubuntu-dash/xfrun4/xfce4-appfinder since none of them could suit my need.
 
@@ -36,6 +37,8 @@ Key-bindings may be modified as the beginning of the script.
 
 The number of lines of history and results may be modified at the beginning of the script.
 
+The list of commands and the command history are two text files located in the directory of the script. Simply edit these files to modify the command list.
+
 ## REQUIREMENTS
 You need to install the following:
     python
@@ -43,6 +46,7 @@ You need to install the following:
     python-levenshtein
 
 It should be cross-platform, but has been tested on linux only.
+
 
 ## INSTALLATION
 Make the script executable and put it in your path
